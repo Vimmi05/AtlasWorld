@@ -5,7 +5,6 @@
 }
 
 html {
-  font-size: 62.5;
   font-family: "urbanist";
 }
 
@@ -18,7 +17,6 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 p,li,a,button {
-  font-size: 1.7rem;
   letter-spacing: 0.1rem;
   line-height: 1.6;
   color: #fff;
@@ -57,9 +55,61 @@ button {
 
 /* Layout */
 .container {
-  max-width: 100rem;
+  max-width: 1000rem;
   margin: auto;
 }
+
+.grid {
+  display: grid;
+}
+
+.grid-two-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-three-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-four-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* Layout */
+header {
+  position: fixed; /* Make the header fixed */
+  top: 0; /* Position it at the top */
+  left: 0; /* Position it at the left */
+  width: 100%; /* Make it span the full width */
+  height: 5rem;
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+  background-color: #202020;
+  z-index: 1000; /* Ensure it stays above other content */
+}
+
+.navbar-grid {
+  grid-template-columns: 0.5fr 1fr;
+  align-items: center;
+  height: 5rem;
+  padding: 0 3.2rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 3.2rem;
+  color: #fff;
+
+  & li a {
+    color: #fff;
+  }
+}
+
+.ham-menu{
+  display: none;
+}
+
+
 
 
 

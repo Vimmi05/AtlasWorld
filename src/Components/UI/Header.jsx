@@ -1,3 +1,5 @@
+import { NavLink, useRouteError } from "react-router-dom"
+
 const Header = () => {
    return (
     <header>
@@ -5,7 +7,7 @@ const Header = () => {
             <div className="grid navbar-grid">
                 <div className="logo">
                     <NavLink to="/">
-                    <h1>WorldAtlas</h1>
+                    <li>WorldAtlas</li>
                     </NavLink>
                 </div>
 

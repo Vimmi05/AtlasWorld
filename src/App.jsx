@@ -7,6 +7,7 @@ import About from './Pages/About'
 import Contact from './Pages/Contact'
 import Country from './Pages/Country'
 import ErrorPage from './Pages/ErrorPage'
+
 const router = createBrowserRouter([
   {
     path: "/",
